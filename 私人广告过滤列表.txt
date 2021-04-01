@@ -156,11 +156,20 @@ hqq.to##^script:has-text(popunder)
 netflav.com##.ads_head_banner_header
 netflav.com##.ads_video_overlay_mobile
 ! 多域名 -------------------------------------------------------------------
-jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.player_pause
-jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com###ad
+
 wandusp.*##.player_pause
 wandusp.*###ad
 sybjs.*,sybjw.*,sybjtv.*##.player_pause
 sybjs.*,sybjw.*,sybjtv.*###ad
-mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.player_pause
-mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw###ad
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.player_pause
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw###ad
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.leftd
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.rightd
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.theme-Headline > div
+mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.theme-layout > div
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.player_pause
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com###ad
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.leftd
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.rightd
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.theme-Headline > div
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.theme-layout > div
