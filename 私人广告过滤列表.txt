@@ -4,8 +4,8 @@
 ! Expires: 2 days
 
 ! 页面恶意弹窗 -------------------------------------------------------------
-##^script:has-text(popmagicldr)
-##^script:has-text(window.parent.MAC.User.PopedomCallBack(0.9,$('.player_showtry').html())
+*##^script:has-text(popmagicldr)
+*##^script:has-text(window.parent.MAC.User.PopedomCallBack(0.9,$('.player_showtry').html())
 
 ! 嵌入式播放器弹窗 ----------------------------------------------------------
 /\/asset\/bann\.js/
