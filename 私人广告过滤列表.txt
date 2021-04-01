@@ -30,6 +30,8 @@ hqq.to##^script:has-text(popunder)
 ##[src*="//3337780.com"]
 ##[src*="//3338877.com"]
 ! href* 属性 ----------------------------------------------------------------
+*##[href*="//8824894.com"]
+*##[href*="//t1797.com"]
 *##[href*="//x888865.com"]
 *##[href*="//v39977.com"]
 *##[href*="//k7195.com"]
@@ -172,6 +174,7 @@ mdr18.*##.player_pause
 mdr18.*###ad
 mdr18.*##.leftd
 mdr18.*##.rightd
+2048live.*##div[style$="transform: translate(-50%, 0px);z-index:9999;"]
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.player_pause
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw###ad
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.leftd
