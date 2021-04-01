@@ -175,6 +175,10 @@ mdr18.*###ad
 mdr18.*##.leftd
 mdr18.*##.rightd
 2048live.*##div[style$="transform: translate(-50%, 0px);z-index:9999;"]
+2048live.*##.player_pause
+2048live.*###ad
+2048live.*##.leftd
+2048live.*##.rightd
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.player_pause
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw###ad
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.leftd
