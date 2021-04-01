@@ -144,3 +144,10 @@ hqq.to##^script:has-text(popunder)
 ! 域名 属性 ----------------------------------------------------------------
 netflav.com##.ads_head_banner_header
 netflav.com##.ads_video_overlay_mobile
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com##.player_pause
+jokerlu.com,jokerlu2.com,jokerlu3.com,jokerlu4.com,jokerlu5.com###ad
+wandusp.*##.player_pause
+wandusp.*###ad
+sybjs.*,sybjw.*,sybjtv.*##.player_pause
+sybjs.*,sybjw.*,sybjtv.*###ad
+
