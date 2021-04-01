@@ -30,6 +30,10 @@ hqq.to##^script:has-text(popunder)
 ##[src*="//3337780.com"]
 ##[src*="//3338877.com"]
 ! href* 属性 ----------------------------------------------------------------
+*##[href*="//x888865.com"]
+*##[href*="//v39977.com"]
+*##[href*="//k7195.com"]
+*##[href*="//t208888.com"]
 ##[href*=".1266yl.com"]
 ##[href*=".1281yl.com"]
 ##[href*=".250558.com"]
@@ -156,11 +160,16 @@ hqq.to##^script:has-text(popunder)
 netflav.com##.ads_head_banner_header
 netflav.com##.ads_video_overlay_mobile
 ! 多域名 -------------------------------------------------------------------
-
 wandusp.*##.player_pause
 wandusp.*###ad
+wandusp.*##.leftd
+wandusp.*##.rightd
 sybjs.*,sybjw.*,sybjtv.*##.player_pause
 sybjs.*,sybjw.*,sybjtv.*###ad
+mdr18.*##.player_pause
+mdr18.*###ad
+mdr18.*##.leftd
+mdr18.*##.rightd
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.player_pause
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw###ad
 mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.leftd
