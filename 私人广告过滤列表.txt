@@ -166,6 +166,8 @@ wandusp.*##.leftd
 wandusp.*##.rightd
 sybjs.*,sybjw.*,sybjtv.*##.player_pause
 sybjs.*,sybjw.*,sybjtv.*###ad
+sybjs.*,sybjw.*,sybjtv.*##.leftd
+sybjs.*,sybjw.*,sybjtv.*##.rightd
 mdr18.*##.player_pause
 mdr18.*###ad
 mdr18.*##.leftd
