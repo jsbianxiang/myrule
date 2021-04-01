@@ -162,5 +162,5 @@ wandusp.*##.player_pause
 wandusp.*###ad
 sybjs.*,sybjw.*,sybjtv.*##.player_pause
 sybjs.*,sybjw.*,sybjtv.*###ad
-mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw##.player_pause
-mdapp.pw，mdapp1.pw，mdapp2.pw，mdapp3.pw，mdapp4.pw，mdapp5.pw，mdapp6.pw，mdapp7.pw，mdapp8.pw，mdapp9.pw###ad
+mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw##.player_pause
+mdapp.pw,mdapp1.pw,mdapp2.pw,mdapp3.pw,mdapp4.pw,mdapp5.pw,mdapp6.pw,mdapp7.pw,mdapp8.pw,mdapp9.pw###ad
