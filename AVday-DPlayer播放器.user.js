@@ -47,6 +47,9 @@
     }
 
     if (av_avid !== v_poster) {
+        if($("meta[itemprop='contentURL']").attr("content")){
+            av_avid = $("meta[itemprop='contentURL']").attr("content").replace(/.*\/apen\/([^/]+)\/.*/, "$1");
+        }
         av_avideoUrl = 'https://video.awvvvvw.live/apen/' + av_avid + '/' + av_avid + '.m3u8';
         videoUrl = av_avideoUrl;
     }
