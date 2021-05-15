@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         AVday-DPlayer播放器
+// @name         AVday『Fluid Player』
 // @namespace    https://greasyfork.org/zh-CN/users/108076
 // @version      21.5.15
 // @description  免VIP[m3u8]VIP会员视频
