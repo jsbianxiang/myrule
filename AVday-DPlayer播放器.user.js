@@ -55,9 +55,8 @@
         sw_avideoUrl = 'https://video.awvvvvw.live/sw_videos/videos/' + sw_avid + '/video.m3u8';
         videoUrl = sw_avideoUrl;
     }
-
     console.log(videoUrl);
-    GM_addStyle(GM_getResourceText("playercss"));
+
     var div = "<video id='hls-video'><source src=" + videoUrl + " type='application/x-mpegURL'/></video>";
     $('#video-player-block')[0].insertAdjacentHTML('afterend', div);
     fluidPlayer('hls-video', {
