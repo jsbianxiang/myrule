@@ -6,7 +6,6 @@
 // @author       草木灰
 // @match        https://avday.tv/watch/*
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js
-// @resource     playercss   https://raw.githubusercontent.com/fluid-player/fluid-player/master/src/css/fluidplayer.css
 // @require      https://cdn.bootcss.com/hls.js/0.12.4/hls.min.js
 // @require      https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js
 // @run-at       document-end
@@ -68,4 +67,5 @@
         }
     });
     $('#video-player-block')[0].remove();
+    $('#unlock-msg').remove();
 })();
