@@ -4,16 +4,16 @@
 ## =====================================================
 ## 国外DNS
 ## Google DNS
-DOMAIN-SUFFIX,dns.google
+DOMAIN,dns.google
 IP-CIDR,8.8.8.8/32,no-resolve
 IP-CIDR,8.8.4.4/32,no-resolve
 IP-CIDR6,2001:4860:4860::8888/128,no-resolve
 IP-CIDR6,2001:4860:4860::8844/128,no-resolve
 
 ## Cloudflare DNS
-DOMAIN-SUFFIX,cloudflare-dns.com
-DOMAIN-SUFFIX,cloudflare.com
-DOMAIN-SUFFIX,one.one.one.one
+DOMAIN,cloudflare-dns.com
+DOMAIN,dns.cloudflare.com
+DOMAIN,one.one.one.one
 ## Standard
 IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.0.0.1/32,no-resolve
@@ -31,59 +31,109 @@ IP-CIDR6,2606:4700:4700::1113/128,no-resolve
 IP-CIDR6,2606:4700:4700::1003/128,no-resolve
 
 ## Quad9 DNS
-DOMAIN-SUFFIX,quad9.net
 ## Standard
+DOMAIN,dns.quad9.net
 IP-CIDR,9.9.9.9/32,no-resolve
 IP-CIDR,149.112.112.112/32,no-resolve
 IP-CIDR6,2620:fe::fe/128,no-resolve
 IP-CIDR6,2620:fe::9/128,no-resolve
-## Secured
-IP-CIDR,9.9.9.11/32,no-resolve
-IP-CIDR,149.112.112.11/32,no-resolve
-IP-CIDR6,2620:fe::11/128,no-resolve
-IP-CIDR6,2620:fe::fe:11/128,no-resolve
 ## Unsecured
+DOMAIN,dns10.quad9.net
 IP-CIDR,9.9.9.10/32,no-resolve
 IP-CIDR,149.112.112.10/32,no-resolve
 IP-CIDR6,2620:fe::10/128,no-resolve
 IP-CIDR6,2620:fe::fe:10/128,no-resolve
+## ECS
+DOMAIN,dns11.quad9.net
+IP-CIDR,9.9.9.11/32,no-resolve
+IP-CIDR,149.112.112.11/32,no-resolve
+IP-CIDR6,2620:fe::11/128,no-resolve
+IP-CIDR6,2620:fe::fe:11/128,no-resolve
 
 ## OpenDNS
-DOMAIN-SUFFIX,opendns.com
+DOMAIN,doh.opendns.com
+DOMAIN,dns.opendns.com
 ## Standard
 IP-CIDR,208.67.222.222/32,no-resolve
 IP-CIDR,208.67.220.220/32,no-resolve
 IP-CIDR6,2620:119:35::35/128,no-resolve
 IP-CIDR6,2620:119:53::53/128,no-resolve
 ## FamilyShield
+DOMAIN,doh.familyshield.opendns.com
+DOMAIN,familyshield.opendns.com
 IP-CIDR,208.67.222.123/32,no-resolve
 IP-CIDR,208.67.220.123/32,no-resolve
-
+## Sandbox
+DOMAIN,doh.sandbox.opendns.com
+DOMAIN,sandbox.opendns.com
+IP-CIDR,208.67.222.2/32,no-resolve
+IP-CIDR,208.67.220.2/32,no-resolve
+IP-CIDR6,2620:0:ccc::2/128,no-resolve
+IP-CIDR6,2620:0:ccd::2/128,no-resolve
 
 ## DNS.SB
-DOMAIN-SUFFIX,doh.sb
-DOMAIN-SUFFIX,dns.sb
-DOMAIN-SUFFIX,dot.sb
+DOMAIN,doh.dns.sb
+DOMAIN,doh.sb
+DOMAIN,dns.sb
+DOMAIN,dot.sb
 IP-CIDR,185.222.222.222/32,no-resolve
 IP-CIDR,45.11.45.11/32,no-resolve
 IP-CIDR6,2a09::/128,no-resolve
 IP-CIDR6,2a11::/128,no-resolve
 
 ## AdGuard DNS
-DOMAIN-SUFFIX,adguard-dns.com
 ## Default
+DOMAIN,dns.adguard-dns.com
 IP-CIDR,94.140.14.14/32,no-resolve
 IP-CIDR,94.140.15.15/32,no-resolve
 IP-CIDR6,2a10:50c0::ad1:ff/128,no-resolve
 IP-CIDR6,2a10:50c0::ad2:ff/128,no-resolve
-## Non-filtering
-IP-CIDR,94.140.14.140/32,no-resolve
-IP-CIDR,94.140.14.141/32,no-resolve
-IP-CIDR6,2a10:50c0::1:ff/128,no-resolve
-IP-CIDR6,2a10:50c0::2:ff/128,no-resolve
 ## Family Protection
+DOMAIN,family.adguard-dns.com
 IP-CIDR,94.140.14.15/32,no-resolve
 IP-CIDR,94.140.15.16/32,no-resolve
 IP-CIDR6,2a10:50c0::bad1:ff/128,no-resolve
 IP-CIDR6,2a10:50c0::bad2:ff/128,no-resolve
+## Non-filtering
+DOMAIN,unfiltered.adguard-dns.com
+IP-CIDR,94.140.14.140/32,no-resolve
+IP-CIDR,94.140.14.141/32,no-resolve
+IP-CIDR6,2a10:50c0::1:ff/128,no-resolve
+IP-CIDR6,2a10:50c0::2:ff/128,no-resolve
+
+
+## CONTROLD DNS
+DOMAIN-SUFFIX,freedns.controld.com
+##  P0 Unfiltered
+IP-CIDR,76.76.2.0/32,no-resolve
+IP-CIDR,76.76.10.0/32,no-resolve
+IP-CIDR6,2606:1a40::/128,no-resolve
+IP-CIDR6,2606:1a40:1::/128,no-resolve
+##  P1 Malware Protection
+IP-CIDR,76.76.2.1/32,no-resolve
+IP-CIDR,76.76.10.1/32,no-resolve
+IP-CIDR6,2606:1a40::1/128,no-resolve
+IP-CIDR6,2606:1a40:1::1/128,no-resolve
+##  P2 Ads & Tracking
+IP-CIDR,76.76.2.2/32,no-resolve
+IP-CIDR,76.76.10.2/32,no-resolve
+IP-CIDR6,2606:1a40::2/128,no-resolve
+IP-CIDR6,2606:1a40:1::2/128,no-resolve
+##  P3 Social
+IP-CIDR,76.76.2.3/32,no-resolve
+IP-CIDR,76.76.10.3/32,no-resolve
+IP-CIDR6,2606:1a40::3/128,no-resolve
+IP-CIDR6,2606:1a40:1::3/128,no-resolve
+##  P4 Family Friendly
+IP-CIDR,76.76.2.4/32,no-resolve
+IP-CIDR,76.76.10.4/32,no-resolve
+IP-CIDR6,2606:1a40::4/128,no-resolve
+IP-CIDR6,2606:1a40:1::4/128,no-resolve
+## P5 Advanced 
+IP-CIDR,76.76.2.5/32,no-resolve
+IP-CIDR,76.76.10.5/32,no-resolve
+IP-CIDR6,2606:1a40::5/128,no-resolve
+IP-CIDR6,2606:1a40:1::5/128,no-resolve
+
+
 # =====================================================
