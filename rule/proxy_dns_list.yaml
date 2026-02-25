@@ -64,6 +64,9 @@ payload:
   # 标准模式
   - DOMAIN,doh.opendns.com
   - DOMAIN,dns.opendns.com
+  - DOMAIN,doh.umbrella.com
+  - DOMAIN,dns.umbrella.com
+  - DOMAIN,dns.sse.cisco.com
   - IP-CIDR,208.67.222.222/32,no-resolve
   - IP-CIDR,208.67.220.220/32,no-resolve
   - IP-CIDR6,2620:119:35::35/128,no-resolve
