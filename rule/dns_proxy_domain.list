@@ -1,0 +1,77 @@
+# =====================================================
+# 公共 DNS 服务域名清单
+# 收录常见国际 / 亚洲公共 DNS 服务的域名
+# 仅为域名规则，建议在上游配置中搭配 `no-resolve` 使用，以避免 IP 反查开销
+#
+# 服务概览：
+# Google Public DNS：全球通用，稳定可靠，支持 DoH/DoT。
+# Cloudflare 1.1.1.1：注重隐私与安全，提供标准 / Family 等多种策略。
+# Quad9：侧重恶意域名拦截，也提供无过滤与支持 ECS 的版本。
+# OpenDNS / Cisco Umbrella：内置钓鱼与内容过滤，含标准 / FamilyShield / Sandbox 模式。
+# DNS.SB、AdGuard、NextDNS、ControlD 等：提供多维度广告过滤与隐私增强。
+#
+# 底部附有部分亚洲区域（台湾、日本）公共 DNS，可按需要增删或扩展自建节点。
+# =====================================================
+# ==== 国际常用公共 DNS ====
+# -Google Public DNS --
+DOMAIN,dns.google
+
+# -Cloudflare DNS --
+DOMAIN,cloudflare-dns.com
+DOMAIN,dns.cloudflare.com
+DOMAIN,one.one.one.one
+
+# -Quad9（安全防护 DNS）--
+# 标准安全过滤（默认拦截已知恶意域名）
+DOMAIN,dns.quad9.net
+# 无过滤版本（不做安全拦截）
+DOMAIN,dns10.quad9.net
+# 启用 ECS（更优地理定位）
+DOMAIN,dns11.quad9.net
+
+# -OpenDNS / Cisco Umbrella --
+# 标准模式
+DOMAIN,doh.opendns.com
+DOMAIN,dns.opendns.com
+DOMAIN,doh.umbrella.com
+DOMAIN,dns.umbrella.com
+DOMAIN,dns.sse.cisco.com
+# FamilyShield 家庭防护（默认拦截成人内容等）
+DOMAIN,doh.familyshield.opendns.com
+DOMAIN,familyshield.opendns.com
+# Sandbox 测试 / 隔离环境
+DOMAIN,doh.sandbox.opendns.com
+DOMAIN,sandbox.opendns.com
+
+# -DNS.SB --
+DOMAIN,doh.dns.sb
+DOMAIN,doh.sb
+DOMAIN,dns.sb
+DOMAIN,dot.sb
+
+# -AdGuard DNS --
+# 默认拦截广告与跟踪
+DOMAIN,dns.adguard-dns.com
+# Family Protection 家庭保护节点
+DOMAIN,family.adguard-dns.com
+# 无过滤模式（仅提供解析）
+DOMAIN,unfiltered.adguard-dns.com
+
+# -NextDNS --
+DOMAIN,dns.nextdns.io
+DOMAIN,anycast.dns.nextdns.io
+
+# -ControlD DNS --
+# 使用后缀匹配，适配不同策略前缀
+DOMAIN-SUFFIX,freedns.controld.com
+
+# === 亚洲区域公共 DNS ===
+# 台湾 TWNIC Quad 101
+DOMAIN,dns.twnic.tw
+
+# 日本 IIJ 公共 DNS
+DOMAIN,public.dns.iij.jp
+
+# 日本 Japan DNS Server
+DOMAIN,jp.tiarap.org
+DOMAIN,jp.tiar.app
