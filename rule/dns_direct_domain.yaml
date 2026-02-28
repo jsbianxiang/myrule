@@ -17,7 +17,3 @@ payload:
     # -18bit DNS（广告拦截）--
     # 以拦截广告为主的加密 DNS（DoH / DoT）服务入口
     - doh.18bit.cn
-
-    # -关胜 DNS（广告拦截）--
-    # 聚焦广告 / 恶意内容拦截的加密 DNS 服务
-    - 2026.dns1.top
