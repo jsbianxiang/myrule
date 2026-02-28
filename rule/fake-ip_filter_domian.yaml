@@ -1,0 +1,43 @@
+payload:
+    # LAN
+    - "*"
+    - "*.lan"
+    - "*.localdomain"
+    - "*.example"
+    - "*.invalid"
+    - "*.localhost"
+    - "*.test"
+    - "*.local"
+    - "*.home.arpa"
+    - "*.direct"
+    # Win10本地连接检测
+    - "+.msftconnecttest.com"
+    - "+.msftncsi.com"
+    # QQ登录
+    - "localhost.ptlogin2.qq.com"
+    - "localhost.sec.qq.com"
+    # 微信登录
+    - "localhost.*.weixin.qq.com"
+    # Game
+    ## Steam
+    - "+.steamcontent.com"
+    ## Nintendo Switch
+    - "+.srv.nintendo.net"
+    - "*.n.n.srv.nintendo.net"
+    - "+.cdn.nintendo.net"
+    ## Microsoft Xbox
+    - "xbox.*.*.microsoft.com"
+    - "*.*.xboxlive.com"
+    - "xbox.*.microsoft.com"
+    - "xnotify.xboxlive.com"
+    ## Wotgame
+    - "+.battle.net"
+    - "+.wargaming.net"
+    # STUN
+    - "+.stun.*.*"
+    - "+.stun.*.*.*"
+    - "+.stun.*.*.*.*"
+    - "+.stun.*.*.*.*.*"
+    # 自定义添加
+    - "+.xn--zoom.com"
+    - "+.xn--zoomm.com"

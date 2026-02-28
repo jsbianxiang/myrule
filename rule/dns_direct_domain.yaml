@@ -1,0 +1,23 @@
+payload:
+    # -DNSPod Public DNS+ --
+    # 公共解析 + DoH / DoT 等多协议访问入口
+    - doh.pub
+    - dot.pub
+    - dns.pub
+
+    # -AliDNS（阿里云公共 DNS）--
+    # 面向国内用户的高性能公共 DNS 解析
+    - dns.alidns.com
+
+    # -360 DNS --
+    # 提供传统解析与 DoH / DoT 加密访问
+    - doh.360.cn
+    - dot.360.cn
+
+    # -18bit DNS（广告拦截）--
+    # 以拦截广告为主的加密 DNS（DoH / DoT）服务入口
+    - doh.18bit.cn
+
+    # -关胜 DNS（广告拦截）--
+    # 聚焦广告 / 恶意内容拦截的加密 DNS 服务
+    - 2026.dns1.top
