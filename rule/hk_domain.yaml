@@ -1,4 +1,4 @@
 payload:
     # 香港节点 代理域名
-    - api-jooxtt.sanook.com
+    - +.api-jooxtt.sanook.com
     - +.joox.com
