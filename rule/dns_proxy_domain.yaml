@@ -62,3 +62,6 @@ payload:
     # 日本 Japan DNS Server
     - jp.tiarap.org
     - jp.tiar.app
+    
+    # 非拥塞DNS解析
+    - v.recipes
