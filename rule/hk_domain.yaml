@@ -2,3 +2,5 @@ payload:
     # 香港节点 代理域名
     - +.api-jooxtt.sanook.com
     - +.joox.com
+    # 嵌入式播放器
+    - +.upload18.org
