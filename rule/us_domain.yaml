@@ -1,8 +1,11 @@
 payload:
     # 美国节点 代理域名
+    # 嵌入式播放器
     - +.surrit.store
     - +.wowstream.cloud
     - +.wowstream2.cloud
     - +.tubitv.com
+    # 日本成人网站
     - +.erodougazo.com
+    # 写真网站
     - +.v2ph.ru
