@@ -6,7 +6,7 @@ payload:
     # 写真网站
     - +.v2ph.ru
     # odkmedia影视系列网站
-    - +.cdn.appsflyer.com
-    - +.ondemandchina.com
-    - +.ondemandkorea.com
+    - +.odkmedia.io
+    # - +.ondemandchina.com
+    # - +.ondemandkorea.com
     
