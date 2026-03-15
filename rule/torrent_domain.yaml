@@ -2,3 +2,4 @@ payload:
   # 指定免费订阅节点用于解除torrent站点解析
   - +.javtorrent.me
   - +.btorrent.xyz
+  - +.webtorrent.io
