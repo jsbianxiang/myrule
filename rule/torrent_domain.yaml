@@ -3,3 +3,4 @@ payload:
   - +.javtorrent.me
   - +.btorrent.xyz
   - +.webtorrent.io
+  - "+.torrentkitty.*"
