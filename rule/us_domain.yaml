@@ -4,7 +4,7 @@ payload:
     # 日本成人网站
     - +.erodougazo.com
     # 写真网站
-    # - +.v2ph.ru
+    - "+.v2ph.*"
     - +.buondua.com
     - +.buondua.us
     # odkmedia影视系列网站
