@@ -5,8 +5,7 @@ payload:
     - +.erodougazo.com
     # 写真网站
     - "+.v2ph.*"
-    - +.buondua.com
-    - +.buondua.us
+    - "+.buondua.*"
     # odkmedia影视系列网站
     - +.odkmedia.io
     # 痴汉队
