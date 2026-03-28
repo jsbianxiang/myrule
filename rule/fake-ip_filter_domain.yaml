@@ -35,4 +35,3 @@ payload:
   # - "+.xn--zoom.com" # zoom.com 的 punycode 形式（防域名污染或变种）
   # - "+.xn--zoomm.com" # zoomm.com 的 punycode 形式（防变种）
   - +.statscrop.com
-  - "206.189.91.3"
