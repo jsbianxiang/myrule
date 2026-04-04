@@ -1,8 +1,42 @@
 payload:
-    # 日本节点 代理域名
-    - +.2nt.com
+    # ──────────────────────────────────────────────────────────────
+    # 日本节点定向分流列表 (Japan Region Domains)
+    # ──────────────────────────────────────────────────────────────
+
+    # 1. 日本综合娱乐与游戏 (Japanese Entertainment & Gaming)
+    # 逻辑：DMM 是日本最大的综合娱乐平台，其游戏和视频服务对日本原生 IP 有严格锁定。
+    - +.fanza.com
     - +.dmm.com
     - +.dmm.co.jp
-    - +.mgstage.com
-    - +.sokmil.com
-    - +.worker-blog.com
+    - +.dmmapis.com # 负责 API 鉴权
+    - +.dmm-extension.com # 负责插件和扩展验证
+    - +.dmm-extension.jp
+
+    # 2. 日系垂直多媒体分发 (Japan Specific Media)
+    # 逻辑：针对 MGStage、Sokmil 等平台，直连日本节点能确保最佳的视频流质量和解析速度。
+    - +.mgstage.com # 日系影音分发
+    - +.sokmil.com # 日系垂直内容平台
+    - +.2nt.com # FC2 博客及媒体底层服务
+    - +.worker-blog.com # 日系内容发布关联域
+
+    # 3. 核心成人平台 (Geo-Locked)
+
+    - +.unext.jp # U-NEXT/H-NEXT
+    - +.abema.tv # Abema TV
+
+    # 4. 片商官网 (Official Studio Sites)
+    - +.sod.co.jp # SOD
+    - +.prestige-av.com # Prestige
+    - +.s1s1s1.com # S1
+    - +.tokyo-hot.com # 东京热
+    - +.caribbeancom.com # 加勒比
+    - +.heyzo.com # Heyzo
+
+    # 5. 同人与二次元 (2D & Doujin)
+    - +.dlsite.com # DLsite
+    - +.getchu.com # Getchu
+
+
+    # ──────────────────────────────────────────────────────────────
+    # 3. 用户自定义：JP 节点代理白名单
+    # ──────────────────────────────────────────────────────────────
