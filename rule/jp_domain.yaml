@@ -3,38 +3,55 @@ payload:
     # 日本节点定向分流列表 (Japan Region Domains)
     # ──────────────────────────────────────────────────────────────
 
-    # 1. 日本综合娱乐与游戏 (Japanese Entertainment & Gaming)
-    # 逻辑：DMM 是日本最大的综合娱乐平台，其游戏和视频服务对日本原生 IP 有严格锁定。
-    - +.fanza.com
-    - +.dmm.com
-    - +.dmm.co.jp
-    - +.dmmapis.com # 负责 API 鉴权
-    - +.dmm-extension.com # 负责插件和扩展验证
-    - +.dmm-extension.jp
+    # 1. DMM/FANZA 核心生态 (DMM Group & Gaming)
+    # 逻辑：必须包含静态资源和 API 服务器，否则会出现“能登录但加载不出图”的情况。
+    - +.dmm.com # DMM 核心网
+    - +.dmm.co.jp # DMM 本土网 (含页游与电子书)
+    - +.fanza.com # FANZA 成人门户
+    - +.fanza.jp # FANZA 区域关联域
+    - +.dmmapis.com # 核心身份校验 API
+    - +.dmm-res.jp # DMM 关键静态资源 (CSS/图片/封面) - 必备
+    - +.videomarket.jp # DMM 视频流底层分发
+    - +.dmm-extension.com # DMM 浏览器插件/扩展
+    - +.dmm-extension.jp # DMM 浏览器插件/扩展
 
-    # 2. 日系垂直多媒体分发 (Japan Specific Media)
-    # 逻辑：针对 MGStage、Sokmil 等平台，直连日本节点能确保最佳的视频流质量和解析速度。
-    - +.mgstage.com # 日系影音分发
-    - +.sokmil.com # 日系垂直内容平台
-    - +.2nt.com # FC2 博客及媒体底层服务
-    - +.worker-blog.com # 日系内容发布关联域
+    # 2. 日本流媒体与点播平台 (Japanese VOD & Streaming)
+    # 逻辑：这些平台均有强力的日本区域封锁。
+    - +.abema.tv # Abema TV (必备)
+    - +.abema.io # Abema API 后端
+    - +.unext.jp # U-NEXT / H-NEXT (日本版 Netflix)
+    - +.nicovideo.jp # Niconico 动画
+    - +.niconico.jp # Niconico 关联域
+    - +.tver.jp # TVer (日本最大的免费电视台聚合，强烈推荐)
+    - +.paravi.jp # Paravi 视频
+    - +.telasa.jp # TELASA
 
-    # 3. 核心成人平台 (Geo-Locked)
-
-    - +.unext.jp # U-NEXT/H-NEXT
-    - +.abema.tv # Abema TV
-
-    # 4. 片商官网 (Official Studio Sites)
-    - +.sod.co.jp # SOD
+    # 3. 片商、垂直平台与内容发布 (Official Studios & FC2)
+    # 逻辑：针对 FC2 及大型片商，直连日本节点能确保最佳的视频解析速度。
+    - +.fc2.com # FC2 综合门户 (核心)
+    - +.fc2.jp # FC2 日本本地域
+    - +.2nt.com # FC2/博客底层解析
+    - +.mgstage.com # MGStage (必备)
+    - +.sokmil.com # Sokmil
+    - +.worker-blog.com # 垂直内容关联域
+    - +.p-m-soft.com # 部分日系页游资源
+    - +.s1s1s1.com # S1 (核心片商)
+    - +.sod.co.jp # SOD 官网
+    - +.soft-on-demand.jp # SOD 关联域
     - +.prestige-av.com # Prestige
-    - +.s1s1s1.com # S1
     - +.tokyo-hot.com # 东京热
     - +.caribbeancom.com # 加勒比
     - +.heyzo.com # Heyzo
+    - +.moodyz.com # Moodyz (片商补全)
+    - +.ideapocket.com # IdeaPocket (片商补全)
 
-    # 5. 同人与二次元 (2D & Doujin)
-    - +.dlsite.com # DLsite
-    - +.getchu.com # Getchu
+    # 4. 同人、二次元与购物 (Doujin & Hobby)
+    - +.dlsite.com # DLsite (同人志/音轨 - 必备)
+    - +.getchu.com # Getchu (游戏资源)
+    - +.melonbooks.co.jp # Melonbooks
+    - +.toranoana.jp # 虎之穴
+    - +.suruga-ya.jp # 骏河屋 (二手/谷子交易)
+    - +.rakuten.co.jp # 乐天日本 (日本地区限定活动)
 
 
     # ──────────────────────────────────────────────────────────────
