@@ -1,0 +1,7 @@
+[Adguard Browser Extension MV3]
+! Title: 广告过滤规则
+! Version: 202509081
+! Expires: 2 days
+! Homepage: https://github.com/jsbianxiang/myrule
+
+! ----------------------------------------------
