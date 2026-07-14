@@ -1,0 +1,77 @@
+payload:
+  # ──────────────────────────────────────────────────────────────
+  # 日本节点定向分流列表 (Japan Region Domains)
+  # ──────────────────────────────────────────────────────────────
+
+  # 1. DMM/FANZA 核心生态 (DMM Group & Gaming)
+  # 逻辑：必须包含静态资源和 API 服务器，否则会出现"能登录但加载不出图"的情况。
+  # 所属者: 合同会社DMM.com (DMM.com LLC) — 日本大型综合娱乐平台集团
+  - +.dmm.com # DMM 核心网
+  # 所属者: 合同会社DMM.com — 日本本土法人主体，持有 .co.jp 授权
+  - +.dmm.co.jp # DMM 本土网 (含页游与电子书)
+  - +.videomarket.jp # DMM 视频流底层分发
+  # 所属者: 合同会社DMM.com — DMM 官方浏览器扩展/插件托管
+
+  # 2. 日本流媒体与点播平台 (Japanese VOD & Streaming)
+  # 逻辑：这些平台均有强力的日本区域封锁。
+  # 所属者: 株式会社AbemaTV — CyberAgent 与 TV Asahi 合资，日本最大互联网电视台
+  - +.abema.tv # Abema TV (必备)
+  # 所属者: 株式会社U-NEXT — 日本最大付费 VOD 平台 (U-NEXT Holdings 旗下)
+  - +.unext.jp # U-NEXT / H-NEXT (日本版 Netflix)
+  # 所属者: 株式会社ドワンゴ (Dwango) — KADOKAWA集团旗下，运营 Niconico 弹幕视频
+  - +.nicovideo.jp # Niconico 动画
+  # 所属者: 株式会社ドワンゴ (Dwango) — Niconico 品牌关联域及账号系统
+  - +.tver.jp # TVer (日本最大的免费电视台聚合，强烈推荐)
+  # 所属者: 株式会社TELASA — KDDI 与 TV Asahi 合资运营的付费流媒体平台
+  - +.telasa.jp # TELASA
+
+  # 3. 片商、垂直平台与内容发布 (Official Studios & FC2)
+  # 逻辑：针对 FC2 及大型片商，直连日本节点能确保最佳的视频解析速度。
+  # 所属者: FC2, Inc. — 注册于美国内华达州，实质日系运营，综合 UGC 平台
+  - +.fc2.com # FC2 综合门户：博客/视频/直播/成人内容一体化平台 (核心)
+  # 所属者: FC2, Inc. — FC2 日本区域本地化域名注册
+  # 所属者: FC2, Inc. — FC2 旗下底层图片与资源存储基础设施域
+  - +.2nt.com # FC2 旗下底层解析域，FC2博客图片/资源常依赖此域名
+  # 所属者: 合同会社DMM.com — MGStage 为 DMM 旗下独立成人视频子品牌平台
+  - +.mgstage.com # MGStage — DMM旗下最大成人视频平台 (必备)
+  # 所属者: 株式会社Sokmil — 日本独立成人内容下载与流媒体运营商
+  - +.sokmil.com # Sokmil — 日本成人内容下载与流媒体平台
+  # 所属者: 不明确（垂直成人内容联盟站点，多家片商共用宣传域）
+  - +.worker-blog.com # 垂直成人内容关联域，部分片商博客/宣传站使用
+  # 所属者: 株式会社S1 NO.1 STYLE — 日系高端成人内容制作发行品牌
+  - +.s1s1s1.com # S1 NO.1 STYLE — 核心日系成人片商官方站
+  # 所属者: 株式会社ソフト・オン・デマンド (SOD) — 日本知名大型成人影视制作发行商
+  - +.sod.co.jp # SOD (Soft On Demand) — 大型片商官网
+  # 所属者: 株式会社ソフト・オン・デマンド (SOD) — SOD 品牌国际化及跳转关联域
+  - +.soft-on-demand.jp # SOD 关联域名，部分跳转与资源走此域
+  # 所属者: 株式会社プレステージ (Prestige) — 日系中高端成人内容制作发行商
+  - +.prestige-av.com # Prestige — 日系成人片商官方站
+  # 所属者: 株式会社東京熱 (Tokyo-Hot) — 日本老牌知名成人内容制作商
+  - +.tokyo-hot.com # Tokyo-Hot (东京热) — 知名日系片商
+  # 所属者: Caribbean Communications Inc. — 注册于海外，实质日系运营的成人内容平台
+  - +.caribbeancom.com # Caribbeancom (加勒比) — 知名日系片商
+  # 所属者: 株式会社Heyzo — 日本独立成人内容制作与发行平台
+  - +.heyzo.com # Heyzo — 日系成人内容平台
+  # 所属者: 株式会社ムーディーズ (Moodyz) — 属于 IdeaPocket 集团旗下子品牌
+  - +.moodyz.com # Moodyz — 属于 IdeaPocket 系列的片商品牌
+  # 所属者: 株式会社アイデアポケット (IdeaPocket) — 日系大型成人内容制作/发行集团
+  - +.ideapocket.com # IdeaPocket — 日系大型成人内容制作/发行公司
+
+  # 4. 同人、二次元与购物 (Doujin & Hobby)
+  # 所属者: 株式会社エイシス (AiCis) — DLsite 实际运营商，日本最大数字同人内容发行平台
+  - +.dlsite.com # DLsite — 日本最大同人/商业数字内容平台 (游戏/漫画/音声 - 必备)
+  # 所属者: 株式会社ゲッチュー！(Getchu) — 专注 Galgame、动画及周边的日本零售网站
+  - +.getchu.com # Getchu — 日本 Galgame、动画及周边购物网站
+  # 所属者: 株式会社メロンブックス (Melonbooks) — 日本二次元同人志与周边专门零售商
+  - +.melonbooks.co.jp # Melonbooks — 二次元同人志/周边专门网店
+  # 所属者: 株式会社とらのあな (Toranoana) — 日本知名同人志及二次元周边销售平台
+  - +.toranoana.jp # 虎之穴 (Toranoana) — 知名同人志销售平台
+  # 所属者: 株式会社駿河屋 (Surugaya) — Geo Holdings 旗下，日本二手游戏/动漫交易平台
+  - +.suruga-ya.jp # 骏河屋 — 日本二手游戏/动漫谷子交易平台
+  # 所属者: 楽天グループ株式会社 (Rakuten Group, Inc.) — 日本最大综合电商集团，东京证交所上市
+  - +.rakuten.co.jp # 乐天市场 — 日本最大综合购物平台 (部分活动/商品日本区限定)
+  # ──────────────────────────────────────────────────────────────
+  # 5. 用户自定义：JP 节点代理白名单
+  # 说明：在此处追加需要走日本节点的域名，格式同上 (+.example.com)
+  # ──────────────────────────────────────────────────────────────
+  # - +.example.jp
