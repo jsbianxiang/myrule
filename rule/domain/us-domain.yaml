@@ -10,7 +10,7 @@ payload:
 
   # 2. 视觉艺术与写真画廊 (Galleries & Photography)
   # 逻辑：此类网站通常对美国及特定地区 IP 开放更高质量的源图加载。
-  # - +.v2ph.* # V2PH 综合写真
+  # - +.v2ph.* # V2PH 综合写真 需要cloudflare 代理一致
   - +.erodougazo.com # 日本成人向嵌入式播放器/图库
 
   # 3. 视频聚合与流出平台 (Adult Video & Tubes)
