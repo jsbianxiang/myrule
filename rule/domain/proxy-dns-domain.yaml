@@ -4,6 +4,7 @@ payload:
   # ──────────────────────────────────────────────────────────────
   - dns.google
   - dns.quad9.net
+  - dns11.quad9.net
   - cloudflare-dns.com
   - one.one.one.one
   - v.recipes
