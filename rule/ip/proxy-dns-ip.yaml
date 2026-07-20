@@ -19,7 +19,7 @@ payload:
   # Quad9 DNS UDP/DoH/DoT
   - 9.9.9.9/32
   - 149.112.112.112/32
-  - 2620:fe::::11/128
+  - 2620:fe::fe/128
   - 2620:fe::9/128
   # Quad9 DNS ecs UDP/DoH/DoT
   - 9.9.9.11/32
