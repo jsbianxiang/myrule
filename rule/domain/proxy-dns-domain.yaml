@@ -9,3 +9,6 @@ payload:
   - one.one.one.one
   - v.recipes
   - common.dot.dns.yandex.net
+  - doh.dns.sb
+  - doh.sb
+  - dns.sb
