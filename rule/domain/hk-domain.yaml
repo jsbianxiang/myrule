@@ -3,11 +3,30 @@ payload:
   # 香港节点定向分流列表 (Hong Kong Region Domains)
   # ──────────────────────────────────────────────────────────────
 
-  # 1. 区域限制性流媒体 (Geo-Restricted Streaming)
-  # 逻辑：JOOX 音乐服务对 IP 归属地有严格要求，香港节点是解锁其完整曲库的首选方案。
-  - +.joox.com # JOOX 音乐官网及核心 API
-  - +.api-jooxtt.sanook.com # JOOX 东南亚区域分发 API
+  # 1. 区域限制性流媒体与音乐 (Geo-Restricted Streaming & Music)
+  # 所属者: 腾讯控股 (Tencent) — 东南亚/港台主打音乐服务 JOOX
+  - "+.joox.com" # JOOX 音乐官网及核心 API
+  - "+.joox.mobi" # JOOX 移动端/H5 鉴权域
+  - "+.api-jooxtt.sanook.com" # JOOX 东南亚区域分发 API
+
+  # 所属者: 电视广播有限公司 (TVB) — 香港最大免费电视及流媒体平台
+  - "+.tvb.com" # TVB 官网
+  - "+.mytvsuper.com" # myTV SUPER (港剧/直播必备，强锁 HK IP)
+
+  # 所属者: 电讯盈科 (PCCW) — ViuTV 及 Viu 流媒体平台
+  - "+.viu.tv" # ViuTV 香港免费电视直播
+  - "+.viu.com" # Viu 影视平台
+  - "+.now.com" # Now TV 香港付费电视
+  - "+.nowe.com" # Now E 体育/影视
+
+  # 2. 本地电商与生活/金融服务 (Local Services & Finance)
+  # 所属者: 香港科技探索 (HKTV) — 香港最大本土综合网购平台
+  - "+.hktvmall.com" # HKTVmall
+  # 所属者: HashKey Group — 香港首批持牌合规虚拟资产交易所
+  - "+.hashkey.com" # HashKey Exchange
+
+
   # ──────────────────────────────────────────────────────────────
-  # 2. 用户自定义：HK 节点代理白名单
+  # 3. 用户自定义：HK 节点代理白名单
   # ──────────────────────────────────────────────────────────────
-  # - +.example.hk
+  # - "+.example.hk"

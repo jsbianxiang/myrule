@@ -3,14 +3,43 @@ payload:
   # 台湾节点定向分流列表 (Taiwan Region Domains)
   # ──────────────────────────────────────────────────────────────
 
-  # 1. 影音娱乐与成人内容 (Adult Entertainment & Media)
-  # 逻辑：此类网站通常对台湾及周边地区 IP 有内容优化或加速策略。
-  # 所属者: JKForum (軍事迷論壇) — 台湾综合论坛，下设 av.jkforum.net 成人影音子站
-  - +.av.jkforum.net # 综合成人影音论坛
-  # 所属者: FC2DB（非官方第三方） — 台湾运营的 FC2 影片资料库与资源聚合索引站
-  - +.fc2db.com # FC2 资源聚合
-  # 所属者: JAVten — 台湾运营的日系成人影片资源分享站，非官方聚合平台
-  - +.javten.com # 日系成人影片
-  # 所属者: ClickMe! 網路股份有限公司 — 台湾本土互动式成人内容与广告平台
-  - +.clickme.net # 互动式成人内容
-  - +.javdb.com
+  # 1. 台湾二次元与动漫平台 (Anime & Gaming)
+  # 所属者: 旺普網路資訊股份有限公司 — 巴哈姆特動畫瘋 (动画追番必备，强锁 TW IP)
+  - "+.gamer.com.tw" # 巴哈姆特动画疯主站与播放接口
+  - "+.bahamut.com.tw" # 巴哈姆特社区与底层 CDN
+
+  # 2. 台湾主流流媒体与电视台 (TW OTT & Streaming)
+  # 所属者: 巧克科技新媒體 (LINE Taiwan) — LINE TV (台剧/韩综必备)
+  - "+.linetv.tw" # LINE TV 播放与 API
+  # 所属者: 立視科技股份有限公司 — LiTV 线上影视
+  - "+.litv.tv" # LiTV 影视与电视直播
+  # 所属者: 威望國際 (CATCHPLAY) — 台湾知名电影流媒体平台
+  - "+.catchplay.com" # CatchPlay+
+  # 所属者: 中華電信 (CHT) — Hami Video 体育与电视直播
+  - "+.hamivideo.hinet.net" # Hami Video 影视与体育直播
+
+  # 3. 音乐、社群与本土论坛 (Music & Local Forums)
+  # 所属者: 願境網訊 (KKCompany) — 台湾第一大数字音乐平台
+  - "+.kkbox.com" # KKBOX 音乐官网与 API
+  - "+.kkbox.com.tw" # KKBOX 本土鉴权域
+  # 所属者: 狄卡科技股份有限公司 — Dcard (台湾最大青年社群)
+  - "+.dcard.tw" # Dcard 论坛
+  # 所属者: 台湾大学 PTT 资研社 — 批踢踢实业坊
+  - "+.ptt.cc" # PTT 网页版
+
+  # 4. 影音娱乐与资源聚合 (Adult Entertainment & Media Index)
+  # 所属者: JKForum (軍事迷論壇) — 综合成人影音论坛
+  - "+.av.jkforum.net"
+  # 所属者: FC2DB — 台湾运营的 FC2 影片资料库
+  - "+.fc2db.com"
+  # 所属者: JAVten — 日系成人影片资源分享站
+  - "+.javten.com"
+  # 所属者: ClickMe! 網路股份有限公司 — 互动式平台
+  - "+.clickme.net"
+  # 所属者: JAVDB — 成人影片索引与数据查询平台
+  - "+.javdb.com"
+
+  # ──────────────────────────────────────────────────────────────
+  # 5. 用户自定义：TW 节点代理白名单
+  # ──────────────────────────────────────────────────────────────
+  # - "+.example.tw"

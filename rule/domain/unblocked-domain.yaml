@@ -1,40 +1,42 @@
 payload:
   # ──────────────────────────────────────────────────────────────
-  # 种子/BT 站点域名列表 (Torrent/BT Domains)
+  # 种子/BT 站点与家宽节点定向域名列表 (Torrent & Residential IP Domains)
+  # 说明：此类域名对机房 IP/Cloudflare 风控极敏感，需走家宽/高解锁代理节点
   # ──────────────────────────────────────────────────────────────
 
-  # 1. 综合 BT 资源站 (General Torrent Sites)
-  # 逻辑：BT 站点通常使用海外服务器，且可能存在域名劫持或解析干扰，需走代理。
-  - +.btorrent.xyz # BT 资源下载站
-  - +.webtorrent.io # WebTorrent 资源站
+  # 1. 综合 BT/PT 资源站与 Tracker Web 端 (General Torrent Sites)
+  # 逻辑：解决 DNS 劫持及机房 IP 拦截问题，保证 Tracker 网页与种子文件正常下载
+  - "+.btorrent.xyz" # BT 资源下载站
+  - "+.webtorrent.io" # WebTorrent 资源站
+  - "+.torrentkitty.*" # TorrentKitty 磁力搜索引擎 (全 TLD 通配)
 
-  # 2. 特定类型种子站 (Specific Torrent Categories)
-  # 逻辑：针对特定内容类型的种子站，确保解析和下载链路稳定。
-  - +.javtorrent.me # 日系成人影片种子站
-  - +.torrentkitty.* # TorrentKitty 资源站（含子域名）
+  # 2. 特定类型种子与资源索引站 (Specific Torrent & Resource Index)
+  - "+.javtorrent.me" # 日系种子站
+  - "+.freejavtorrent.com" # JAV 种子资源站
+  - "+.javct.net" # JAV 资讯与种子
+  - "+.javcl.com" # JAV 索引
+  - "+.javplayer.org" # JAVPlayer 官方与资源域
+
+  # 3. 图像/图集/流媒体托管与 Cloudflare 盾避让 (Images & Media Hosting)
+  # 说明：使用家宽 IP 避免触发 Cloudflare 无限 5 秒盾校验
+  - "+.buondua.*" # Buondua 图集站 (TLD 通配)
+  - "+.erodougazo.com" # 二次元/写真图集
+  - "+.statscrop.com" # 网站流量统计/数据分析 (避免 IP 封锁)
+  - "+.otaku34.com"
+  - "+.streamingworld.xyz"
+  - "+.vidcore.net" # 底层视频播放器 CDN
+  - "+.bestgirlsexy.com"
+  - "+.camwhores.*" # Live Cam 录播/图库
+  - "+.camwhoresbay.*"
+
+  # 4. 台湾/区域限制与家宽专属 (TW Restricted & Special Residential)
+  - "+.iwant-sex.com"
+  - "+.findsav.com"
+  - "+.18porns.cc"
+  - "+.18porn.cc"
+  - "+.dcard.tw" # Dcard (防机房 IP 风控，需结合规则顺序)
 
   # ──────────────────────────────────────────────────────────────
-  # 3. 用户自定义：BT 节点代理白名单
+  # 5. 用户自定义：家宽/BT 代理白名单
   # ──────────────────────────────────────────────────────────────
-  - +.otaku34.com
-  - +.streamingworld.xyz
-  - +.vidcore.net
-  - +.erodougazo.com
-  - +.freejavtorrent.com
-  - +.javct.net
-  - +.javcl.com
-  - +.javplayer.org
-  - +.bestgirlsexy.com
-  - +.statscrop.com
-  - +.buondua.* # Buondua 资源库
-  # 台湾专属
-  - +.iwant-sex.com
-  - +.findsav.com
-  - +.18porns.cc
-  - +.18porn.cc
-  - +.dcard.tw
-  - +.camwhores.*
-  - +.camwhoresbay.*
-
-
-
+  # - "+.example.com"
