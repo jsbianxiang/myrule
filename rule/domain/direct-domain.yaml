@@ -4,8 +4,8 @@ payload:
   # ──────────────────────────────────────────────────────────────
   # 微软 (Microsoft) - 系统网络连通性测试 (NCSI)
   # 业务：Windows 系统用来探测网络是否通畅、是否处于 Portal 认证页面的服务
-  # - "+.msftconnecttest.com"
-  # - "+.msftncsi.com"
+  - "+.msftconnecttest.com"
+  - "+.msftncsi.com"
 
   # Telegram 网页嵌入式评论框插件 (Comments App)
   # 业务：第三方网站嵌入 Telegram 账号登录与评论交互模块，直连防止登录 Token 校验失败或组件卡转圈
