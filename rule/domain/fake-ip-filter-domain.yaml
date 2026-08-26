@@ -1,122 +1,70 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
-  # 游戏联机与对战平台 (返回 Real-IP 以降低 P2P 延迟)
-  # ──────────────────────────────────────────────────────────────
-  - "*.*.xboxlive.com"
-  - "+.battle.net"
-  - "+.battlenet.com.cn"
-  - "+.cdn.nintendo.net"
-  - "+.ff14.sdo.com"
-  - "+.ffxiv.com"
-  - "+.finalfantasyxiv.com"
-  - "ff.dorado.sdo.com"
-  - "+.square-enix.com"
-  - "+.srv.nintendo.net"
-  - "+.steamcontent.com"
-  - "+.uu.163.com"
-  - "+.wargaming.net"
-  - "+.wggames.cn"
-  - "+.wotgame.cn"
-  - "+.wowsgame.cn"
-  - "xbox.*.*.microsoft.com"
-  - "xbox.*.microsoft.com"
-  - "xnotify.xboxlive.com"
-  - "na.b.g-tun.com"
-  - "+.gcloudcs.com"
-  - "+.gcloudsdk.com"
+  # --------------------------------------------------------------
+  # 用户自定义：fake-ip-filter 域名白名单
+  #
+  # 命中后返回真实 IP，不使用 Fake-IP。
+  # 是否经过代理由后续 Rules 决定。
+  #
+  # 注意：
+  #   "*" 仅匹配一级域名，不递归匹配多级域名。
+  #   对需要覆盖多级域名的服务，必须逐级声明。
+  # --------------------------------------------------------------
 
-  # ──────────────────────────────────────────────────────────────
-  # STUN 穿透 (严格保留原样连贯通配符)
-  # ──────────────────────────────────────────────────────────────
+  # --------------------------------------------------------------
+  # STUN / NAT 穿透 / WebRTC
+  #
+  # STUN 用于：
+  #   - NAT 类型检测
+  #   - UDP 打洞
+  #   - P2P 建链
+  #   - WebRTC
+  #
+  # 注意：
+  #   "*" 仅匹配一级域名。
+  #   因此必须按域名层级连续覆盖。
+  #
+  # 例如：
+  #   stun.example.com
+  #       → +.stun.*
+  #
+  #   stun.services.mozilla.com
+  #       → +.stun.*.*
+  # --------------------------------------------------------------
+  - "+.stun.*"
   - "+.stun.*.*"
   - "+.stun.*.*.*"
   - "+.stun.*.*.*.*"
   - "+.stun.*.*.*.*.*"
 
-  # ──────────────────────────────────────────────────────────────
-  # NTP 与时间同步 (严格保留原样 1-7 连贯通配符)
-  # ──────────────────────────────────────────────────────────────
-  - "+.ntp.org.cn"
-  - "+.pool.ntp.org"
-  - "+.time.edu.cn"
-  - "ntp.*.com"
-  - "ntp1.*.com"
-  - "ntp2.*.com"
-  - "ntp3.*.com"
-  - "ntp4.*.com"
-  - "ntp5.*.com"
-  - "ntp6.*.com"
-  - "ntp7.*.com"
-  - "time-ios.apple.com"
-  - "time.*.apple.com"
-  - "time.*.com"
-  - "time.*.edu.cn"
-  - "time.*.gov"
-  - "time1.*.com"
-  - "time1.cloud.tencent.com"
-  - "time2.*.com"
-  - "time3.*.com"
-  - "time4.*.com"
-  - "time5.*.com"
-  - "time6.*.com"
-  - "time7.*.com"
+  # --------------------------------------------------------------
+  # TURN / TURN over TLS
+  #
+  # 用于 NAT 穿透失败后的中继及实时通信。
+  #
+  # "*" 仅匹配一级域名，因此按层级连续覆盖。
+  # --------------------------------------------------------------
+  - "+.turn.*"
+  - "+.turn.*.*"
+  - "+.turn.*.*.*"
+  - "+.turn.*.*.*.*"
+  - "+.turn.*.*.*.*.*"
+  - "+.turns.*"
+  - "+.turns.*.*"
+  - "+.turns.*.*.*"
+  - "+.turns.*.*.*.*"
+  - "+.turns.*.*.*.*.*"
 
-  # ──────────────────────────────────────────────────────────────
-  # 国内音视频与流媒体 CDN
-  # ──────────────────────────────────────────────────────────────
-  - "+.126.net"
-  - "+.kuwo.cn"
-  - "+.mcdn.bilivideo.cn"
-  - "+.media.dssott.com"
-  - "+.music.163.com"
-  - "+.music.migu.cn"
-  - "+.sandai.net"
-  - "+.y.qq.com"
-  - "amobile.music.tc.qq.com"
-  - "aqqmusic.tc.qq.com"
-  - "dl.stream.qqmusic.qq.com"
-  - "isure.stream.qqmusic.qq.com"
-  - "mobileoc.music.tc.qq.com"
-  - "music.taihe.com"
-  - "musicapi.taihe.com"
-  - "songsearch.kugou.com"
-  - "streamoc.music.tc.qq.com"
-  - "trackercdn.kugou.com"
+  # --------------------------------------------------------------
+  # 系统网络连通性检测
+  #
+  # 用于操作系统判断：
+  #   - 当前网络是否正常
+  #   - 是否存在 Captive Portal
+  #   - 是否能够访问公网
+  #
+  # 返回 Real-IP，避免 Fake-IP 干扰系统网络状态判断。
+  # --------------------------------------------------------------
 
-  # ──────────────────────────────────────────────────────────────
-  # 网络连通性测试与服务 API
-  # ──────────────────────────────────────────────────────────────
-  - "+.3gppnetwork.org"
-  - "+.cmbchina.com"
-  - "+.cmbimg.com"
-  - "+.direct"
-  - "+.dynv6.net"
-  - "+.kk-rays.com"
-  - "+.linksys.com"
-  - "+.linksyssmartwifi.com"
-  - "+.market.xiaomi.com"
+  # Microsoft
   - "+.msftconnecttest.com"
   - "+.msftncsi.com"
-  - "+.n0808.com"
-  - "+.oray.com"
-  - "+.orayimg.com"
-  - "adguardteam.github.io"
-  - "adrules.top"
-  - "anti-ad.net"
-  - "api-jooxtt.sanook.com"
-  - "api.joox.com"
-  - "heartbeat.belkin.com"
-  - "joox.com"
-  - "lens.l.google.com"
-  - "localhost.*.weixin.qq.com"
-  - "mesu.apple.com"
-  - "+.io.mi.com"
-  - "proxy.golang.org"
-  - "ps.res.netease.com"
-  - "shark007.net"
-  - "static.adtidy.org"
-  - "swcdn.apple.com"
-  - "swdist.apple.com"
-  - "swdownload.apple.com"
-  - "swquery.apple.com"
-  - "swscan.apple.com"
