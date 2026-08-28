@@ -5,3 +5,4 @@ payload:
   # 1. 游戏社区与交互 (Gaming & Social)
   # 逻辑：Steam 社区及其 API 分发通常受到干扰，需走代理保障库存和个人资料加载。
   - steamcommunity.com # Steam 社区主域名
+  - browserleaks.com # 浏览器泄露检测
