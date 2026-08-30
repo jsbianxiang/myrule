@@ -1,63 +1,79 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
-  # 日本节点定向分流列表 (Japan Region Domains)
-  # ──────────────────────────────────────────────────────────────
+  # ================================================
+  # 日本节点体验最佳 / 必须日本 IP 规则集 (JP Optimal)
+  # ================================================
 
-  # 1. DMM/FANZA 核心生态 (DMM Group & Gaming)
-  # 所属者: 合同会社DMM.com — DMM 核心网
-  - "+.dmm.com"
-  - "+.dmm.co.jp"
-  - "+.dmm.hk" # DMM / FANZA 海外及部分鉴权 API
-  - "+.fanza.com" # FANZA 核心平台 (DMM 成人品牌，必备)
-  - "+.videomarket.jp" # DMM 视频流底层分发
+  # 1. 强限区影音流媒体 (非日本 IP 无法播放或提示锁区)
+  - abematv.akamaized.net
+  - ds-linear-abematv.akamaized.net
+  - ds-vod-abematv.akamaized.net
+  - linear-abematv.akamaized.net
+  - vod-abematv.akamaized.net
+  - +.abema.io
+  - +.abema.tv
+  - +.abema-tv.com
+  - +.abematv.co.jp
+  - +.tver.jp
+  - +.tver.co.jp
+  - +.dogatch.jp
+  - +.gorin.jp
+  - +.screens-lab.jp
+  - +.unext.jp
+  - +.unext.co.jp
+  - +.unext-info.jp
+  - +.nxtv.jp
+  - +.nxtv.org
+  - +.telasa.jp
+  - +.videopass.jp
+  - +.radiko.jp
+  - +.fod.fujitv.co.jp
+  - +.lemino.docomo.ne.jp
+  - +.plus.nhk.jp
 
-  # 2. 日本流媒体与点播平台 (Japanese VOD & Streaming)
-  # 所属者: 株式会社AbemaTV — CyberAgent 与 TV Asahi 合资
-  - "+.abema.tv"
-  - "+.abema.io" # Abema 视频流/API 接口
-  - "+.ameba.jp" # CyberAgent 账号系统与底层 CDN
-  # 所属者: 株式会社U-NEXT — 日本最大付费 VOD 平台
-  - "+.unext.jp"
-  # 所属者: 株式会社ドワンゴ (Dwango) — KADOKAWA集团旗下 Niconico
-  - "+.nicovideo.jp"
-  # 所属者: TVer — 日本最大的免费电视台聚合
-  - "+.tver.jp"
-  - "+.tver.org" # TVer 静态资源与底层接口
-  # 所属者: 株式会社TELASA — KDDI 与 TV Asahi 合资
-  - "+.telasa.jp"
+  # 2. DMM / DLsite / MGS 数字与同人平台 (防登录风控与结算限区)
+  - +.dmm.com
+  - +.dmm.co.jp
+  - +.dmm-extension.com
+  - +.dmmapis.com
+  - +.dmmrex.com
+  - +.videomarket.jp
+  - +.dlsite.com
+  - +.dlsite.jp
+  - +.eisys.co.jp
+  - +.mgstage.com
+  - +.mgs.com
+  - +.sokmil.com
+  - +.duga.jp
 
-  # 3. 片商、垂直平台与内容发布 (Official Studios & FC2)
-  - "+.fc2.com"
-  - "+.2nt.com"
-  - "+.mgstage.com"
-  - "+.sokmil.com"
-  - "+.worker-blog.com"
-  - "+.s1s1s1.com"
-  - "+.sod.co.jp"
-  - "+.soft-on-demand.jp"
-  - "+.prestige-av.com"
-  - "+.tokyo-hot.com"
-  - "+.caribbeancom.com"
-  - "+.heyzo.com"
-  - "+.moodyz.com"
-  - "+.ideapocket.com"
+  # 3. Niconico / 创作者订阅平台 (直连/海外节点易卡顿，日本 CDN 加速显著)
+  - +.nicovideo.jp
+  - +.niconico.jp
+  - +.nicochannel.jp
+  - +.dmc.nico
+  - +.nicolive.jp
+  - +.nimg.jp
+  - +.nico.ms
+  - +.smilevideo.jp
+  - +.dwango.jp
+  - +.dwango.co.jp
+  - +.fantia.jp
+  - +.ci-en.jp
+  - +.myfans.jp
 
-  # 4. 同人、二次元与购物 (Doujin & Hobby)
-  # 所属者: 株式会社エイシス (AiCis) — DLsite
-  - "+.dlsite.com"
-  # 所属者: 株式会社ゲッチュー！(Getchu) — Galgame/动漫周边
-  - "+.getchu.com"
-  # 所属者: 株式会社メロンブックス (Melonbooks) — 同人志/周边
-  - "+.melonbooks.co.jp"
-  - "+.melonbooks.jp" # Melonbooks 关联域
-  # 所属者: 株式会社とらのあな (Toranoana) — 虎之穴
-  - "+.toranoana.jp"
-  # 所属者: 株式会社駿河屋 (Surugaya) — 二手动漫/谷子
-  - "+.suruga-ya.jp"
-  # 所属者: 楽天グループ株式会社 — 乐天市场
-  - "+.rakuten.co.jp"
-
-  # ──────────────────────────────────────────────────────────────
-  # 5. 用户自定义：JP 节点代理白名单
-  # ──────────────────────────────────────────────────────────────
-  # - "+.example.jp"
+  # 4. 片商官网 (部分厂商开启了海外 IP 屏蔽或抓取拦截)
+  - +.sod.co.jp
+  - +.soft-on-demand.jp
+  - +.prestige-av.com
+  - +.prestige-pub.com
+  - +.s1s1s1.com
+  - +.moodyz.com
+  - +.ideapocket.com
+  - +.attackers.net
+  - +.madonna-av.com
+  - +.wanz-factory.com
+  - +.dasdas.jp
+  - +.kira-kira.jp
+  - +.premium-beauty.com
+  - +.faleno.jp
+  - +.mutekitv.com
+  - +.kawaii-av.com
