@@ -1,14 +1,31 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
-  # 1. 常见公共 DNS (Public DNS)
-  # ──────────────────────────────────────────────────────────────
-  - dns.google
-  - dns.quad9.net
-  - dns11.quad9.net
-  - cloudflare-dns.com
-  - one.one.one.one
-  - v.recipes
-  - common.dot.dns.yandex.net
-  - doh.dns.sb
-  - doh.sb
-  - dns.sb
+  # Google DNS
+  - "+.dns.google"
+  - "+.dns64.dns.google"
+
+  # Cloudflare DNS
+  - "+.cloudflare-dns.com"
+  - "+.one.one.one.one"
+  - "+.security.cloudflare-dns.com"
+  - "+.family.cloudflare-dns.com"
+
+  # Quad9 DNS
+  - "+.dns.quad9.net"
+
+  # DNS.SB
+  - "+.doh.dns.sb"
+  - "+.dot.sb"
+
+  # Cisco OpenDNS / Umbrella
+  - "+.doh.opendns.com"
+  - "+.doh.familyshield.opendns.com"
+
+  # Yandex DNS
+  - "+.common.dot.dns.yandex.net"
+  - "+.safe.dot.dns.yandex.net"
+  - "+.family.dot.dns.yandex.net"
+
+  # AdGuard DNS
+  - "+.dns.adguard-dns.com"
+  - "+.unfiltered.adguard-dns.com"
+  - "+.family.adguard-dns.com"

@@ -1,44 +1,42 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
+  # ================================================
   # 韩国节点定向分流列表 (South Korea Region Domains)
-  # ──────────────────────────────────────────────────────────────
+  # ================================================
 
-  # 1. 韩国本土主流流媒体与电视台 (KR VOD & OTT Streaming)
-  # 所属者: CJ ENM — 韩国最大综合娱乐集团 (tvN/OCN/Mnet 独播平台)
-  - "+.tving.com" # Tving (韩剧/韩综必备，强锁 KR IP)
-  # 所属者: SK Telecom & 三大电视台 (KBS/MBC/SBS) 合资
-  - "+.wavve.com" # Wavve (韩国三大台聚合流媒体)
-  # 所属者: Coupang — 韩国最大电商集团旗下流媒体平台
-  - "+.coupangplay.com" # Coupang Play (独播剧与体育直播)
-  # 所属者: 韩国本土垂直影音分发平台
-  - "+.jogemovie.net" # 韩国本土影音分发域名
+  # 1. 韩国本土主流流媒体、电视台与直播 (KR VOD & Live Streaming - 强锁 KR IP)
+  - +.tving.com
+  - +.cjpowercast.com
+  - +.wavve.com
+  - +.pooq.co.kr
+  - +.coupangplay.com
+  - +.watcha.com
+  - +.watchapedias.com
+  - +.afreecatv.com
+  - +.sooplive.co.kr
+  - +.chzzk.naver.com
+  - +.jogemovie.net
 
-  # 2. K-Pop 音乐、追星社区与网漫 (Music, Idol & Webtoon)
-  # 所属者: Kakao Entertainment — 韩国排名第一的数字音源平台
-  - "+.melon.com" # Melon 音乐 (榜单与音源播放)
-  # 所属者: NHN Corporation — 知名音源平台
-  - "+.bugs.co.kr" # Bugs 音乐
-  # 所属者: WEVERSE COMPANY (HYBE) — 全球 K-Pop 追星及直播社区
-  - "+.weverse.io" # Weverse
-  # 所属者: Naver & Kakao — 韩国两大网漫/生活门户
-  - "+.naver.com" # Naver 综合门户 (含 Naver Webtoon / CHZZK 直播)
-  - "+.kakao.com" # Kakao 生态
-  - "+.kakaopage.com" # KakaoPage 漫画
+  # 2. K-Pop 音乐、追星社区与网漫门户 (Music, Idol & Webtoon)
+  - +.melon.com
+  - +.bugs.co.kr
+  - +.weverse.io
+  - +.naver.com
+  - +.naver.net
+  - +.kakao.com
+  - +.kakaopage.com
 
-  # 3. 游戏平台与厂商 (KR Gaming)
-  # 所属者: Nexon Co., Ltd. — 韩国最大游戏开发/发行商
-  - "+.nexon.com" # Nexon 韩服官网与鉴权接口
+  # 3. 韩国大厂游戏与鉴权平台 (KR Gaming - 防封号/高风控)
+  - +.nexon.com
+  - +.nexon.net
+  - +.plaync.com
+  - +.smilegate.com
+  - +.onstove.com
 
-  # 4. 外部资源引导与解析 (Resource Redirectors)
-  - "+.fabulouslink.xyz"
-  - "+.topgirl.co"
-  - "+.ddal.xyz"
-  - "+.sogirl.so"
-  - "+.av19v.com"
-  - "+.vdnext.com"
-  - "+.nnvivi.site"
-
-  # ──────────────────────────────────────────────────────────────
-  # 5. 用户自定义：KR 节点代理白名单
-  # ──────────────────────────────────────────────────────────────
-  # - "+.example.kr"
+  # 4. 外部资源引导与解析 (Resource Redirectors & Tube)
+  - +.fabulouslink.xyz
+  - +.topgirl.co
+  - +.ddal.xyz
+  - +.sogirl.so
+  - +.av19v.com
+  - +.vdnext.com
+  - +.nnvivi.site

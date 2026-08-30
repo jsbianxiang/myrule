@@ -1,7 +1,4 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
-  # 用户自定义：直连域名白名单
-  # ──────────────────────────────────────────────────────────────
   # 微软 (Microsoft) - 系统网络连通性测试 (NCSI)
   # 业务：Windows 系统用来探测网络是否通畅、是否处于 Portal 认证页面的服务
   - "+.msftconnecttest.com"
@@ -9,15 +6,14 @@ payload:
 
   # Telegram 网页嵌入式评论框插件 (Comments App)
   # 业务：第三方网站嵌入 Telegram 账号登录与评论交互模块，直连防止登录 Token 校验失败或组件卡转圈
-  - +.commentsmodule.com
+  - "+.commentsmodule.com"
 
   # 爱玩宝 (Aiwanbao) - 游戏服务与工具平台
   # 业务：爱玩宝游戏加速/相关工具与衍生服务的官网及后台 API 域名
-  - +.2ww.com
-  - +.aiwanbao.club
-  - +.k3oues.top
+  - "+.2ww.com"
+  - "+.aiwanbao.club"
+  - "+.k3oues.top"
 
   # 店管家 (DGJApp) - 电商多平台订单管理软件 (SaaS)
   # 业务：淘宝、拼多多、京东等电商卖家的打单发货、订单管理与 SaaS 服务接口
-  - +.dgjapp.com
- 
+  - "+.dgjapp.com"

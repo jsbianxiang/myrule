@@ -1,19 +1,20 @@
 payload:
-  # ──────────────────────────────────────────────────────────────
-  # 常见公共 DNS (Public DNS)
-  # ──────────────────────────────────────────────────────────────
-  # 阿里 DNS (Alidns)
-  - dns.alidns.com
+  # DNSPod / 腾讯 DNS (DoH & DoT 域名)
+  - "+.doh.pub"
+  - "+.sm2.doh.pub"
+  - "+.dot.pub"
 
-  # 腾讯 DNS (DNSPod)
-  - doh.pub
-  - dot.pub
-  - sm2.doh.pub
+  # 阿里 DNS (DoH & DoT 域名)
+  - "+.dns.alidns.com"
 
-  # 360 DNS
-  - doh.360.cn
-  - dot.360.cn
+  # 字节跳动 / 火山引擎 DNS (DoH & DoT 域名)
+  - "+.doh.volcengine.com"
+  - "+.dot.volcengine.com"
 
-  # 18Bit DNS
-  - dns.18bit.cn
-  - doh.18bit.cn
+  # 360 安全 DNS (DoH & DoT 域名)
+  - "+.doh.360.cn"
+  - "+.dot.360.cn"
+
+  # OneDNS / 微步在线 (DoH & DoT 域名)
+  - "+.doh.onedns.net"
+  - "+.dot.onedns.net"
