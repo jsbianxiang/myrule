@@ -18,23 +18,11 @@ payload:
   - +.cwtv.com
   - +.starz.com
 
-  # 2. 美区前沿 AI 与科技服务 (AI Services - 高风控/节点纯净度要求)
-  - +.anthropic.com
-  - +.claude.ai
-  - +.openai.com
-  - +.chatgpt.com
-  - +.oaistatic.com
-  - +.oaiusercontent.com
-  - +.perplexity.ai
-  - +.poe.com
-  - +.midjourney.com
-  - +.suno.ai
-
-  # 3. 视觉图库与 Cloudflare 盾保护站点 (CF Anti-Bot / CDN)
+  # 2. 视觉图库与 Cloudflare 盾保护站点 (CF Anti-Bot / CDN)
   - +.v2ph.com
   - +.v2ph.net
 
-  # 4. 成人影音与资源平台 (US Hosted Tubes & Index)
+  # 3. 成人影音与资源平台 (US Hosted Tubes & Index)
   - +.sexinscene.com
   - +.xn--hhr917d3fecva.xyz
   - +.porncide.space
