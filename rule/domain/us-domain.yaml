@@ -1,0 +1,33 @@
+payload:
+  # ================================================
+  # 美国节点定向分流列表 (U.S. Region Domains)
+  # ================================================
+
+  # 1. 影音多媒体与主流流媒体 (US OTT & Streaming - 强锁 US IP)
+  - +.hulu.com
+  - +.hulustream.com
+  - +.max.com
+  - +.hbomax.com
+  - +.peacocktv.com
+  - +.paramountplus.com
+  - +.pluto.tv
+  - +.tubi.tv
+  - +.tubitv.com
+  - +.odkmedia.io
+  - +.sling.com
+  - +.cwtv.com
+  - +.starz.com
+
+  # 2. 视觉图库与 Cloudflare 盾保护站点 (CF Anti-Bot / CDN)
+  - +.v2ph.com
+  - +.v2ph.net
+
+  # 3. 成人影音与资源平台 (US Hosted Tubes & Index)
+  - +.sexinscene.com
+  - +.xn--hhr917d3fecva.xyz
+  - +.porncide.space
+  - +.porndead.space
+
+  # javdb
+  - +.javdb.com
+  - +.jdbstatic.com

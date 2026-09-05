@@ -1,0 +1,20 @@
+payload:
+  # DNSPod / 腾讯 DNS (DoH & DoT 域名)
+  - "+.doh.pub"
+  - "+.sm2.doh.pub"
+  - "+.dot.pub"
+
+  # 阿里 DNS (DoH & DoT 域名)
+  - "+.dns.alidns.com"
+
+  # 字节跳动 / 火山引擎 DNS (DoH & DoT 域名)
+  - "+.doh.volcengine.com"
+  - "+.dot.volcengine.com"
+
+  # 360 安全 DNS (DoH & DoT 域名)
+  - "+.doh.360.cn"
+  - "+.dot.360.cn"
+
+  # OneDNS / 微步在线 (DoH & DoT 域名)
+  - "+.doh.onedns.net"
+  - "+.dot.onedns.net"
