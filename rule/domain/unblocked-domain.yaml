@@ -1,0 +1,37 @@
+payload:
+  # ================================================
+  # 种子 / BT 站点与家宽节点定向域名列表 (Torrent & Residential IP)
+  # ================================================
+
+  # 1. 综合 BT / PT 资源站与 Tracker Web 端 (General Torrent Sites)
+  - +.btorrent.xyz
+  - +.webtorrent.io
+  - +.torrentkitty.tv
+  - +.torrentkitty.app
+  - +.torrentkitty.org
+
+  # 2. 特定类型种子与 JAV 资源索引 (Torrent & Index Sites)
+  - +.javtorrent.me
+  - +.freejavtorrent.com
+  - +.javct.net
+  - +.javcl.com
+  - +.javplayer.org
+
+  # 3. 图像 / 图集 / 流媒体托管与 Cloudflare 盾避让 (Images & Media Hosting)
+  - +.buondua.com
+  - +.buondua.cc
+  - +.erodougazo.com
+  - +.statscrop.com
+  - +.otaku34.com
+  - +.streamingworld.xyz
+  - +.vidcore.net
+  - +.bestgirlsexy.com
+  - +.camwhores.tv
+  - +.camwhores.spider
+  - +.camwhoresbay.com
+
+  # 4. 高风控 / 区域限制与家宽专属 (Strict Residential IP Required)
+  - +.iwant-sex.com
+  - +.findsav.com
+  - +.18porns.cc
+  - +.18porn.cc
