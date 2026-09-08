@@ -44,6 +44,7 @@ payload:
   - +.mgs.com
   - +.sokmil.com
   - +.duga.jp
+  - +.fanza.jp
 
   # 3. Niconico / 创作者订阅平台 (直连/海外节点易卡顿，日本 CDN 加速显著)
   - +.nicovideo.jp
