@@ -1,0 +1,28 @@
+payload:
+  # ================================================
+  # 香港 IP 强限制平台 (Strict HK Geo-Blocked Only)
+  # ================================================
+
+  # 1. 本地流媒体与影音 (非香港 IP 拒绝播放或提示地域限制)
+  - +.mytvsuper.com
+  - +.tvb.com
+  - +.viu.tv
+  - +.now.com
+  - +.nowe.com
+  - +.now-tv.com
+  - +.hoy.tv
+  - +.joox.com
+  - +.joox.mobi
+  - +.api-jooxtt.sanook.com
+  - +.moov.hk
+
+  # 2. 持牌虚拟银行与加密交易所 (强校验香港原生 IP / 异地登录高风险风控)
+  - +.zabank.com
+  - +.mox.com
+  - +.welab.bank
+  - +.livibank.com
+  - +.fusionbank.com
+  - +.antbank.hk
+  - +.airstarbank.com
+  - +.paob.com.hk
+  - +.hashkey.com
