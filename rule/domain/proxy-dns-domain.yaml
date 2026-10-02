@@ -1,8 +1,7 @@
 payload:
   # Google DNS
   - "+.dns.google"
-  - "+.dns64.dns.google"
-
+  
   # Cloudflare DNS
   - "+.cloudflare-dns.com"
   - "+.one.one.one.one"
