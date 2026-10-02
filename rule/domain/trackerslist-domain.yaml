@@ -1,0 +1,89 @@
+payload:
+  # ================================================
+  # Tracker 域名定向分流列表 (BT / PT Tracker Domains)
+  # ================================================
+
+  # 1. 核心与公共开放 Tracker (Public & Open Trackers)
+  - tracker.opentrackr.com
+  - tracker.opentrackr.org
+  - open.demonii.com
+  - open.demonoid.ch
+  - open.ftorrent.com
+  - open.stealth.si
+  - exodus.desync.com
+  - explodie.org
+  - 1337.abcvg.info
+  - tracker.publictracker.xyz
+  - tracker.opentorrent.top
+  - tracker.peerfect.org
+
+  # 2. 动漫 / 资源站 / 垂直社区 Tracker (Anime & Special Media Trackers)
+  - anime-tracker.aruku.kro.kr
+  - leet-tracker.moe
+  - lucke.fenesisu.moe
+  - ht.therarbg.to
+  - tracker.bt4g.com
+  - tracker.mywaifu.best
+  - tracker.waaa.moe
+  - seedpeer.net
+
+  # 3. 区域与服务商专有 Tracker (Provider & Regional Trackers)
+  - tracker.dler.com
+  - tracker.dler.org
+  - tracker2.dler.org
+  - ipv4announce.sktorrent.eu
+  - retracker01-msk-virt.corbina.net
+  - tracker.playground.ru
+  - tracker.teambelgium.net
+  - tracker.renfei.net
+  - tracker.nekomi.cn
+  - tracker.zhuqiy.com
+  - tracker.zhuqiy.dgj055.icu
+
+  # 4. 动态 DDNS 与自建/第三方 Tracker 节点 (Dynamic & Third-Party Trackers)
+  - 004430.xyz
+  - 021912.xyz
+  - aboutbeautifulgallopinghorsesinthegreenpasture.online
+  - admin.52ywp.com
+  - banananetwork.qzz.io
+  - bittorrent-tracker.e-n-c-r-y-p-t.net
+  - evan.im
+  - mail.segso.net
+  - martin-gebhardt.eu
+  - ns575949.ip-51-222-82.net
+  - orgtgju.org
+  - pybittrack.retiolus.net
+  - rekcart.duckdns.org
+  - shahidrazi.online
+  - t.213891.xyz
+  - t.overflow.biz
+  - torrentclub.online
+  - tr.highstar.shop
+  - tr.kxmp.cf
+  - tr.nyacat.pw
+  - tr.zukizuki.org
+  - tr4ck3r.duckdns.org
+  - tracker-udp.gbitt.info
+  - tracker.0x7c0.com
+  - tracker.7471.top
+  - tracker.aruku.ovh
+  - tracker.auctor.tv
+  - tracker.bittor.pw
+  - tracker.corpscorp.online
+  - tracker.ddunlimited.net
+  - tracker.dhitechnical.com
+  - tracker.ducks.party
+  - tracker.filemail.com
+  - tracker.flatuslifir.is
+  - tracker.fnix.net
+  - tracker.gcrenwp.top
+  - tracker.gmi.gd
+  - tracker.ilibr.org
+  - tracker.leechshield.link
+  - tracker.nexusstream.eu
+  - tracker.pmman.tech
+  - tracker.privateseedbox.xyz
+  - tracker.qu.ax
+  - tracker.theoks.net
+  - tracker.tryhackx.org
+  - tracker.wildkat.net

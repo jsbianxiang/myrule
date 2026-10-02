@@ -1,0 +1,42 @@
+payload:
+  # ================================================
+  # 韩国节点定向分流列表 (South Korea Region Domains)
+  # ================================================
+
+  # 1. 韩国本土主流流媒体、电视台与直播 (KR VOD & Live Streaming - 强锁 KR IP)
+  - +.tving.com
+  - +.cjpowercast.com
+  - +.wavve.com
+  - +.pooq.co.kr
+  - +.coupangplay.com
+  - +.watcha.com
+  - +.watchapedias.com
+  - +.afreecatv.com
+  - +.sooplive.co.kr
+  - +.chzzk.naver.com
+  - +.jogemovie.net
+
+  # 2. K-Pop 音乐、追星社区与网漫门户 (Music, Idol & Webtoon)
+  - +.melon.com
+  - +.bugs.co.kr
+  - +.weverse.io
+  - +.naver.com
+  - +.naver.net
+  - +.kakao.com
+  - +.kakaopage.com
+
+  # 3. 韩国大厂游戏与鉴权平台 (KR Gaming - 防封号/高风控)
+  - +.nexon.com
+  - +.nexon.net
+  - +.plaync.com
+  - +.smilegate.com
+  - +.onstove.com
+
+  # 4. 外部资源引导与解析 (Resource Redirectors & Tube)
+  - +.fabulouslink.xyz
+  - +.topgirl.co
+  - +.ddal.xyz
+  - +.sogirl.so
+  - +.av19v.com
+  - +.vdnext.com
+  - +.nnvivi.site
