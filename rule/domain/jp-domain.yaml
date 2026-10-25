@@ -1,0 +1,80 @@
+payload:
+  # ================================================
+  # 日本节点体验最佳 / 必须日本 IP 规则集 (JP Optimal)
+  # ================================================
+
+  # 1. 强限区影音流媒体 (非日本 IP 无法播放或提示锁区)
+  - abematv.akamaized.net
+  - ds-linear-abematv.akamaized.net
+  - ds-vod-abematv.akamaized.net
+  - linear-abematv.akamaized.net
+  - vod-abematv.akamaized.net
+  - +.abema.io
+  - +.abema.tv
+  - +.abema-tv.com
+  - +.abematv.co.jp
+  - +.tver.jp
+  - +.tver.co.jp
+  - +.dogatch.jp
+  - +.gorin.jp
+  - +.screens-lab.jp
+  - +.unext.jp
+  - +.unext.co.jp
+  - +.unext-info.jp
+  - +.nxtv.jp
+  - +.nxtv.org
+  - +.telasa.jp
+  - +.videopass.jp
+  - +.radiko.jp
+  - +.fod.fujitv.co.jp
+  - +.lemino.docomo.ne.jp
+  - +.plus.nhk.jp
+
+  # 2. DMM / DLsite / MGS 数字与同人平台 (防登录风控与结算限区)
+  - +.dmm.com
+  - +.dmm.co.jp
+  - +.dmm-extension.com
+  - +.dmmapis.com
+  - +.dmmrex.com
+  - +.videomarket.jp
+  - +.dlsite.com
+  - +.dlsite.jp
+  - +.eisys.co.jp
+  - +.mgstage.com
+  - +.mgs.com
+  - +.sokmil.com
+  - +.duga.jp
+  - +.fanza.jp
+
+  # 3. Niconico / 创作者订阅平台 (直连/海外节点易卡顿，日本 CDN 加速显著)
+  - +.nicovideo.jp
+  - +.niconico.jp
+  - +.nicochannel.jp
+  - +.dmc.nico
+  - +.nicolive.jp
+  - +.nimg.jp
+  - +.nico.ms
+  - +.smilevideo.jp
+  - +.dwango.jp
+  - +.dwango.co.jp
+  - +.fantia.jp
+  - +.ci-en.jp
+  - +.myfans.jp
+
+  # 4. 片商官网 (部分厂商开启了海外 IP 屏蔽或抓取拦截)
+  - +.sod.co.jp
+  - +.soft-on-demand.jp
+  - +.prestige-av.com
+  - +.prestige-pub.com
+  - +.s1s1s1.com
+  - +.moodyz.com
+  - +.ideapocket.com
+  - +.attackers.net
+  - +.madonna-av.com
+  - +.wanz-factory.com
+  - +.dasdas.jp
+  - +.kira-kira.jp
+  - +.premium-beauty.com
+  - +.faleno.jp
+  - +.mutekitv.com
+  - +.kawaii-av.com
