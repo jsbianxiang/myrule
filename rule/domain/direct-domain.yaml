@@ -19,4 +19,8 @@ payload:
   - +.dgjapp.com
   # Github加速
   - +.gh-proxy.com
+  - +.gh-proxy.org
+  # workbuddy
   - +.workbuddy.cn
+  #  美团AI浏览器
+  - +.tabbit.com
