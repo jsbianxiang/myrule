@@ -1,4 +1,6 @@
 payload:
+  - +.services.googleapis.cn
+  - +.xn--ngstr-lra8j.com
   - +.mumuplayer.com
   - +.codebuddy.ai
   - +.workbuddy.ai
