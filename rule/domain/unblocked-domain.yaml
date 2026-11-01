@@ -2,7 +2,7 @@ payload:
   # ================================================
   # 种子 / BT 站点与家宽节点定向域名列表 (Torrent & Residential IP)
   # ================================================
-
+  - +.xranks.com
   # 1. 综合 BT / PT 资源站与 Tracker Web 端 (General Torrent Sites)
   - +.btorrent.xyz
   - +.webtorrent.io
